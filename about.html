@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1">
+    <meta name="description" content="Lyka Web Development (Lyka) was founded in 2022 by Leo, an independent programmer, game and web developer who has a commitment to small and local businesses.">
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.png">
+    <title>Franz Kafka | About</title>
+</head>
+<body>
+    <!--<img id="about_img" src="about_banner.jpg" style="min-width:100vw;" />-->
+    <nav style=" position:fixed; z-index:4;" class="navbar" id="nav">
+        <div class="left-side" style="width:100vw">
+            <a class="title" href="home.html" id="left-side" style=" position: fixed; color: white; font-size: 24px; line-height: 95px; float: left; padding: 0px 0px 0px 20px; text-decoration: none;">Franz Kafka</a>
+            <a id="button" class="toggle-button" onclick="toggleul()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </a>
+            <text id="title-float" style=" display:none; position: fixed; color: white; font-size: 24px; line-height: 70px; float: none; left:50%; transform:translateX(-50%);"> About Kafka</text>
+            <ul id="ul" style="display: none; float: right; position: fixed; right:0;">
+
+                <li>
+                    <a href="home.html" id="navlink1" class="nav-link" style=" color: white;">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" id="navlink2" class="active-nav-link" style=" color: white;">About</a>
+                </li>
+                <!--<li>
+                    <a href="pricing.html" id="navlink3" class="nav-link" style=" color: white;">Pricing</a>
+                </li>-->
+                <li>
+                    <a onclick="togglePopup('popup-contact')" id="navlink4" class="nav-link" style=" color: white; cursor:pointer;">Learn More</a>
+                </li>
+
+            </ul>
+
+            <ul id="mobile-ul" style="  background-color: black; position: absolute; top: 2.75rem; display: none; height: 75vh; width: 75vw; ">
+                <li>
+                    <a href="home.html" class="active-nav-link" style="font-size: 40px; color: white;">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" style="font-size: 40px;  color: white; ">About</a>
+                </li>
+                <!--<li>
+                    <a href="pricing.html" style="font-size: 40px;  color: white; ">Pricing</a>
+                </li>-->
+                <li>
+                    <a onclick="togglePopup('popup-contact')" style="font-size: 40px; color: white; ">Learn More</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="popup" id='popup-contact'>
+        <div class="overlay"></div>
+        <div class="content" style="border-radius:12px;">
+            <div class="close-btn" onclick="togglePopup('popup-contact')">
+                &times;
+            </div>
+            <video controls style="height:100%; width:100%;">
+                <source src="kafka.mp4" type="video/mp4">
+            </video>
+
+        </div>
+    </div>
+    <div class="banner" style="width:100vw;">
+        <img id="about_img" src="about.jpg" style="max-height:40vh; width:100vw;" />
+        <h2 id="header" style=" width:100vw;font-family: 'Fjalla One', sans-serif; color: whitesmoke; text-align:center; font-size:7vh; text-shadow: 2px 2px black; position: absolute; top: 10%; left: 50%; transform: translate(-50%, 10%); ">
+            About Kafka
+        </h2>
+        <a id="specialContactButton" style="" class="special-contact-button" onclick="togglePopup('popup-contact')"> Learn More</a>
+        <!--   <a id="contactButton" style=" background-color: orange; width: 10%; text-align: center; /*padding: 30px;*/ /*transform: scale(1.7);*/ display: inline-block; padding: 10px; color: black !important;  border-radius: 24px; font-size: 15px; text-decoration: none; cursor: pointer; position: absolute; top: 30%; left: 50%; transform: translate(-50%, 30%); opacity: 1; "  onclick="togglePopup('popup-contact')"> Let's Talk</a>-->
+        <!-- <a id="contactButton" style=" background-color: orange; top: 88vh !important; left: 90vw; z-index: 4; position: fixed;" class="contact-button" onclick="togglePopup('popup-contact')"> Let's Talk</a>-->
+    </div>
+    <div class="main-content" style="font-family: 'Fjalla One', sans-serif;width: 100vw;min-height: 100vh;">
+        <h1 id="mission" style="text-decoration: 1px underline orange; text-underline-offset: 30px; text-align: center;">Personal Life</h1>
+        <p style="padding: 30px; text-align:justify;">
+            Franz Kafka was born into a Jewish family in Prague in 1883. At the time, Jewish people were separated into ghettos. Kafka did not get along with his father and entered Karl Ferdinand University in 1901 to spite him. However, his father approved of him once he decided to study law.
+            <br><br>
+            Following his graduation in 1907, Kafka worked in the insurance claims field and wrote short stories that were published in literary magazines and two unfinished novels that were published posthumously against his wishes. Kafka’s most widely studies short stories are “The Metamorphosis,” “A Hunger Artist,” and “In the Penal Colony.” Kafka passed away from tuberculosis in 1924.
+        </p>
+        <h1 id="personalization" style="text-decoration: 1px underline orange; text-underline-offset:30px; text-align:center;">Literary Axioms</h1>
+        <p style="padding: 30px; padding-bottom:5px; text-align:justify;">
+            Kafka’s short stories portray the bewildered alienation of modern society. Kafka’s work revolve around 4 axioms:
+            <ul style="text-align:center; list-style:none">
+                <li style="padding-bottom:20px;">
+                    1. Compared with the divine law, no matter how unjust it may sometimes appear to us, all human effort, even the highest, is in the wrong
+                </li>
+                
+                <li style="padding-bottom:20px;">
+                    2. Always whatever our minds or our feelings may tell us, the claim of the divine law to unconditional reverence and obedience is absolute
+                </li>
+                <li style="padding-bottom:20px;">
+                    3. There is a right way of life
+                </li>
+                <li style="padding-bottom:20px;">
+                    4. That its discovery depends on one's attitude to powers which are almost unknown.
+                </li>
+            </ul>
+        </p>
+
+        <h1 id="responsive-design" style="text-decoration: 1px underline orange; text-underline-offset:30px; text-align:center;">What makes something Kafkaesque?</h1>
+        <p style="padding: 15px; text-align:justify;">
+        </p>
+        <h2 id="seo" style="text-decoration: 1px underline orange; text-underline-offset:30px; text-align:center;">Bureaucracy</h2>
+        <p style="padding: 30px; text-align:justify;">
+            The character is forced to deal with the mundane and absurd aspects of bureaucracy. They often provide criticism of the repetitive and mind-numbing steps of legal and political systems.  
+        </p>
+        <h2 id="transitions" style="text-decoration: 1px underline orange; text-underline-offset:30px; text-align:center;">Circular Reasoning</h2>
+        <p style="padding: 30px; text-align:center;">
+            The character that is stuck in the convoluted bureaucracy is a result of their own circular reasoning and the perpetuation of the bureaucratic struggle that they complain about. 
+            <br><br>
+            The character becomes a prisoner of their own ego, trapping themselves in the bureaucracy that they despise. 
+        </p>
+        <h2 id="animation" style="text-decoration: 1px underline orange; text-underline-offset:30px; text-align:center;">Convoluted Systems</h2>
+        <p style="padding: 30px; text-align:justify;">
+            Kafkaesque is used to describe unecessarily frustrating and complicated experiences. 
+            <br><br>
+            The whole ordeal becomes disorienting and illogical that success itself becomes moot. 
+        </p>
+    </div>
+    <!--<div class="footer" id="footer" style=" width: 100vw; height: 15vh; background-color: black;   padding: 40px 20px ;">
+        <h2 style=" float:left;color: white; font-size: 15px; font-family: 'Roboto', sans-serif; text-align: justify;"> © 2022 <a class="no-style-link" style="color:white;" href="https://lykaweb.netlify.app" target="_blank">Lyka Web Development</a> | All Rights Reserved</h2>
+    </div>-->
+    <!--<section>
+        <div class="mobile-footer" id="mobile-footer"  style="display:none; width: 100vw; height: 15vh; background-color: black; position: absolute; top:250%; left: 50%; transform: translate(-50%, 250%);  padding: 40px 20px ;">
+            <h2 style=" float:left;color: white; font-size: 15px; font-family: 'Roboto', sans-serif; text-align: justify;"> © 2022 Lyka | All Rights Reserved</h2>
+        </div>
+    </section>-->
+</body>
+</html>
+<script src="popup.js"></script>
+<script src="devicecheck.js"></script>
+<script src="scrolling.js"></script>
+<script>
+    if (isMobile || isTablet) {
+        //document.getElementById("footer").style.display = "none";
+        //document.getElementById("mobile-footer").style.display = "flex";
+        document.getElementById("about_img").style.minHeight = "20vh";
+        document.getElementById("header").style.top = "2vh";
+        //document.getElementById("contactButton").style.top = "80vh";
+        //document.getElementById("contactButton").style.left = "80vw";
+        document.getElementById("mission").innerText = "Our Mission";
+        document.getElementById("animation").innerText = "Smooth Animation";
+        document.getElementById("specialContactButton").dataset.mobile = 'true';
+    }
+</script>
+<script>
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 0) {
+            document.getElementById("title-float").style.display = "flex";
+        }
+        else {
+            document.getElementById("title-float").style.display = "none";
+        }
+    })
+</script>

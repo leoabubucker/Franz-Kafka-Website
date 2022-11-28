@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" Lyka Web Development (Lyka) is a freelance business committed to providing website development, administration, and maintenance to a personal or business clientele at a reasonable and negotiable price.">
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.png">
+    <style>
+        section#mobile-services {
+            display: none;
+        }
+        body{
+            overflow:hidden;
+        }
+    </style>
+    <title>Franz Kafka | Home</title>
+</head>
+<body>
+
+    <nav style=" position:fixed; z-index:4;" class="navbar" id="nav">
+        <div class="left-side" style="width:100vw">
+            <a class="title" href="home.html" id="left-side" style=" position: fixed; color: white; font-size: 24px; line-height: 95px; float: left; padding: 0px 0px 0px 20px; text-decoration: none;">Franz Kafka</a>
+            <a id="button" class="toggle-button" onclick="toggleul()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </a>
+            <!--<text id="title-float" style=" display:none; position: fixed; color: white; font-size: 24px; line-height: 70px; float: none; left:50%; transform:translateX(-50%);"> Home</text>-->
+            <ul id="ul" style="display: none; float: right; position: fixed; right:0;">
+
+                <li>
+                    <a href="home.html" id="navlink1" class="active-nav-link" style=" color: white;">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" id="navlink2" class="nav-link" style=" color: white;">About</a>
+                </li>
+                <!--<li>
+                    <a href="pricing.html" id="navlink3" class="nav-link" style=" color: white;">Pricing</a>
+                </li>-->
+                <li>
+                    <a onclick="togglePopup('popup-contact')" id="navlink4" class="nav-link" style=" color: white; cursor:pointer;">Learn More</a>
+                </li>
+
+            </ul>
+
+            <ul id="mobile-ul" style="  background-color: black; position: absolute; top: 2.75rem; display: none; height: 75vh; width: 75vw; ">
+                <li>
+                    <a href="home.html" class="active-nav-link" style="font-size: 40px; color: white;">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" style="font-size: 40px;  color: white; ">About</a>
+                </li>
+                <!--<li>
+                    <a href="pricing.html" style="font-size: 40px;  color: white; ">Pricing</a>
+                </li>-->
+                <li>
+                    <a onclick="togglePopup('popup-contact')" style="font-size: 40px; color: white; ">Learn More</a>
+                </li>  
+            </ul>
+        </div>
+    </nav>
+    <div class="banner" style="min-width:100vw;">
+        <img src="home.jpg" style="min-width:100vw; height: 100vh;">
+        <h2 id="header" style=" width:100vw;font-family: 'Fjalla One', sans-serif; color: whitesmoke; text-align:center; font-size:7vh; text-shadow: 2px 2px black; position: absolute; top: 20%; left: 50%; transform: translate(-50%, 20%); ">
+            Franz Kafka
+        </h2>
+        <p id="caption" style="width:100vw;color: whitesmoke; font-size: 3vh;text-align:center; text-shadow: 2px 2px black; position: absolute; top: 34%; left: 50%; transform: translate(-50%, 34%);">
+            By Leo Abubucker and Erik Sikora
+        </p>
+        <a id="contactButton" style="" class="contact-button" onclick="togglePopup('popup-contact')"> Learn More</a>
+    </div>
+    <div class="popup" id='popup-contact'>
+        <div class="overlay"></div>
+        <div class="content" style="border-radius:12px;">
+            <div class="close-btn" onclick="togglePopup('popup-contact')">
+                &times;
+            </div>
+            <video controls style="height:100%; width:100%;">
+                <source src="kafka.mp4" type="video/mp4">
+            </video>
+            <!--<h1 style="font-size:20px; text-align:center;">Let's Talk</h1>
+    <form style="margin-top:0%; margin-bottom:auto; margin-left: auto; margin-right:auto; " class="contact-form" action="https://formsubmit.co/38912c8bb0d5465bc48fcc6a1fc57fa1" method="POST">
+        <div style=" ">
+            <input type="hidden" name="_subject" value="New Email!">
+            <input type="text" style=" padding-left: 5px; width: 30vh; height: 5vh; font-size:15px;" name="first_name" placeholder="First Name" required>
+            <br><br>
+            <input type="text" style="padding-left: 5px; width: 30vh; height: 5vh; font-size: 15px;" name="last_name" placeholder="Last Name" required>
+            <br><br>
+            <input type="email" style="padding-left: 5px; width: 30vh; height: 5vh; font-size: 15px;" name="email" placeholder="Email Address" required>
+            <br><br>
+            <input type="hidden" name="_next" value="https://lykaweb.netlify.app/form-confirmation.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" style="padding-left: 5px; width: 30vh;height: 10vh; font-size: 15px; " name="message" placeholder="Message" required>
+            <br><br>
+            <input type="hidden" name="_template" value="table">
+        </div>
+
+        <button style="width: 20vh; height: 5vh;font-weight: 600;justify-content:center; font-size:15px;  " type="submit">Send</button>-->
+            <!--<p style=" font-size:10px;padding-top:10px;">Please do not submit any confidential information.</p>-->
+            <!--</form>
+    <p style=" padding-top:15px;font-size:24px;"> Lyka Web Development</p>-->
+
+        </div>
+    </div>
+    <!--<section>
+        <div class="foot" id="foot" style=" width: 100vw; height: 15vh; background-color: black; position: absolute; top:200%; left: 50%; transform: translate(-50%, 200%);  padding: 40px 20px ;">
+            <h2 style=" float:left;color: white; font-size: 15px; font-family: 'Roboto', sans-serif; text-align: justify;"> © 2022 <a class="no-style-link" style="color:white;" href="https://www.lykaweb.com" target="_blank">Lyka Web Development</a>  | All Rights Reserved</h2>
+        </div>
+    </section>-->
+</body>
+</html>
+<script src="popup.js"></script>
+<script src="devicecheck.js"></script>
+<!--<script src="carousel.js" defer></script>-->
+<!--<script src="scrolling.js"></script>-->
+<script>
+    if (isMobile || isTablet) {
+        document.getElementById("caption").style.top = "28vh";
+        //document.getElementById("mobile-services").style.display = "grid";
+        //document.getElementById("services-list").style.display = "none";
+        //document.getElementById("clients").style.zIndex = "3";
+        //document.getElementById("clients").style.top = "345vh";
+        //document.getElementById("clients").style.transform = "translate(-50%, 345%)";
+        //document.getElementById("clients-heading").style.textDecoration = "none";
+        //document.getElementById("clients-underlined").style.textDecoration = "1px underline orange";
+        //document.getElementById("clients-underlined").style.textUnderlineOffset = "30px";
+        //document.getElementById("foot").style.top = "425vh";
+        //document.getElementById("foot").style.transform = "translate(-50%, 425%)";
+        //document.getElementById("foot").style.zIndex = "3";
+        document.getElementById("contactButton").dataset.mobile = "true";
+        //document.getElementById("contactButton").style.top = "35vh";
+        //document.getElementById("contactButton").style.width = "30vw";
+
+        //document.getElementById("foot").style.display = "none";
+        //document.getElementById('contactButton').right = '5vw';
+
+    }
+</script>
+<script>
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 0) {
+            if (isMobile) {
+                document.getElementById("contactButton").dataset.scroll = "false";
+            }
+            else {
+                document.getElementById("contactButton").dataset.scroll = "true";
+            }
+            document.getElementById("contactButton").style.transition = "500ms all ease-in-out";
+        }
+        else {
+            delete document.getElementById("contactButton").dataset.scroll;
+        }
+    })
+</script>
+
+<script>
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 0) {
+            document.getElementById("title-float").style.display = "flex";
+        }
+        else {
+            document.getElementById("title-float").style.display = "none";
+        }
+    })
+</script>
